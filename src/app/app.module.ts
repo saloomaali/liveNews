@@ -7,10 +7,15 @@ import { AppComponent } from './app.component';
 import { ViewNewsComponent } from './view-news/view-news.component';
 import { AddNewsComponent } from './add-news/add-news.component';
 import { FormsModule } from '@angular/forms';
+import { NavbarComponent } from './navbar/navbar.component';
 
 const myRoute : Routes = [
   {
     path:"",
+    component:AddNewsComponent
+  },
+  {
+    path:"view",
     component:ViewNewsComponent
   }
 ]
@@ -19,7 +24,8 @@ const myRoute : Routes = [
   declarations: [
     AppComponent,
     ViewNewsComponent,
-    AddNewsComponent
+    AddNewsComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
