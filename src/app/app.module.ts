@@ -8,6 +8,8 @@ import { ViewNewsComponent } from './view-news/view-news.component';
 import { AddNewsComponent } from './add-news/add-news.component';
 import { FormsModule } from '@angular/forms';
 import { NavbarComponent } from './navbar/navbar.component';
+import { HttpClientModule} from '@angular/common/http'
+
 
 const myRoute : Routes = [
   {
@@ -31,7 +33,8 @@ const myRoute : Routes = [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(myRoute),
-    FormsModule
+    FormsModule,
+    HttpClientModule
     
   ],
   providers: [],
